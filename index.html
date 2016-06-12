@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<style>
+			img{width:750px;height:384px;}
+			div {
+				width:750px;
+				height:384px;
+				background-size:750px 384px;
+			}
+
+			@-webkit-keyframes ks-fadeIn{
+				0%{opacity:0}
+				100%{opacity:1}
+			}
+			@keyframes ks-fadeIn{
+				0%{opacity:0}
+				100%{opacity:1}
+			}
+			.fadeIn{
+				-webkit-animation:ks-fadeIn 3500ms linear 0s 1 normal both;
+				animation:ks-fadeIn 3500ms linear 0s 1 normal both;
+				opacity:1;
+				background-size:100%
+			}
+		</style>
+	</head>
+	<body>
+		<div data-src="images/1.jpg"></div>
+		<img data-src="images/2.jpg" alt="">
+		<div data-src="images/3.jpg"></div>
+		<img data-src="images/4.png" alt="">
+		<div data-src="images/5.jpg"></div>
+		<img data-src="images/6.jpg" alt="">
+		<div data-src="images/7.jpg"></div>
+	</body>
+	<script src="lazyload.js"></script>
+	<script>
+	LazyLoad();
+	</script>
+</html>
